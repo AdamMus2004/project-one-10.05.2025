@@ -1,3 +1,4 @@
+package com.example;
 import java.io.*;
 
 public class Seat {
@@ -26,12 +27,12 @@ public class Seat {
     }
     void saveToFile(){
         try (PrintWriter writer=new PrintWriter (new FileWriter("cinema"))){
-        for (int[]row:seats){
-            for (int seat:row){
-                writer.print(seat);
+            for (int[]row:seats){
+                for (int seat:row){
+                    writer.print(seat);
+                }
+                writer.println();
             }
-            writer.println();
-        }
         }catch (IOException e){
             System.out.print("Error in saving cinema file"+e.getMessage());
         }
@@ -74,7 +75,7 @@ public class Seat {
 
                 if (seats[i][j]==1){
 
-                System.out.print("|X| ");
+                    System.out.print("|X| ");
                 }
                 else {
                     System.out.print("|O| ");

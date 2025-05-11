@@ -1,4 +1,5 @@
-import javax.sound.midi.SoundbankResource;
+package com.example;
+
 import java.util.Scanner;
 
 public class ReservationSystem {
