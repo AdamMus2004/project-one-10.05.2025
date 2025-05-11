@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ad62c29-88b0-4e73-9e7b-6a144c3578c2" name="Changes" comment="feat: 9 test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/CinemaApp.java" afterDir="false" />
+    <list default="true" id="6ad62c29-88b0-4e73-9e7b-6a144c3578c2" name="Changes" comment="feat: dodano klasę cinemaApp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cinema" beforeDir="false" afterPath="$PROJECT_DIR$/cinema" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Seat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SeatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SeatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/CinemaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/CinemaApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/CinemaApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/CinemaApp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746976894634</updated>
-      <workItem from="1746976903904" duration="16811000" />
+      <workItem from="1746976903904" duration="18212000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Dodano maven i pierwszy test">
       <option name="closed" value="true" />
@@ -101,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746994057309</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: dodano klasę cinemaApp">
+      <option name="closed" value="true" />
+      <created>1746995874362</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746995874362</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +116,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: Dodano maven i pierwszy test" />
     <MESSAGE value="feat: 9 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 9 test" />
+    <MESSAGE value="feat: dodano klasę cinemaApp" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: dodano klasę cinemaApp" />
   </component>
 </project>

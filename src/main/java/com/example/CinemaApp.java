@@ -35,15 +35,27 @@ public class CinemaApp {
                 "3. Cancel reservation.\n" +
                 "4. Show seats\n" +
                 "5. Quit.");
-    }
 
+    }
     private int getUserChoice() {
+        while (!scanner.hasNextInt()) {
+            System.out.println("Please enter a number:");
+            scanner.next();
+        }
         return scanner.nextInt();
     }
+    private int[] getRowAndColumn() {
+        System.out.print("Enter row: ");
+        int row = scanner.nextInt();
+        System.out.print("Enter column: ");
+        int col = scanner.nextInt();
+        return new int[]{row, col};
+    }
+
 
     private void handleCheckSeat() {
-        System.out.println("Enter row and collumn to check if seat is avalible:");
-        if (seat.isSeatAvailable(scanner.nextInt(), scanner.nextInt())){
+        int[] coords = getRowAndColumn();
+        if (seat.isSeatAvailable(coords[0], coords[1])){
             System.out.println("Seat is available.");
         }
         else {
@@ -52,14 +64,14 @@ public class CinemaApp {
     }
 
     private void handleReserveSeat() {
-        System.out.println("Enter row and collumn to reserve seat:");
-        boolean success = seat.reserveSeat(scanner.nextInt(), scanner.nextInt());
+        int[] coords = getRowAndColumn();
+        boolean success = seat.reserveSeat(coords[0], coords[1]);
         System.out.println(success ? "Seat reserved!" : "Seat already taken!"   );
     }
 
     private void handleCancelReservation() {
-        System.out.println("Enter row and collumn to cancel reservation of the seat:");
-        boolean canceled=seat.cancelReservation(scanner.nextInt(), scanner.nextInt());
+        int[] coords = getRowAndColumn();
+        boolean canceled=seat.cancelReservation(coords[0], coords[1]);
         System.out.println(canceled?"Reservation canceled." : "Seat was not reserved).");
     }
 
